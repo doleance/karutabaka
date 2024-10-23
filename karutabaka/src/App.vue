@@ -1,5 +1,5 @@
 <template>
-	<PageHeader />
+	<PageHeader class="header-margin" />
 	<main>
 		<RouterView />
 	</main>
@@ -11,7 +11,12 @@ import { computed } from 'vue';
 import PageHeader from './components/PageHeader.vue';
 
 const isDark = usePreferredDark();
-const favicon = computed(() => (isDark.value ? 'favicon-momiji.ico' : 'favicon.ico'));
-
+const favicon = computed(() => `favicon-${isDark.value ? '-momiji' : ''}.ico`);
 useFavicon(favicon);
 </script>
+
+<style lang="scss" scoped>
+.header-margin {
+	margin: 44px 0px;
+}
+</style>

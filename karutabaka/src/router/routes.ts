@@ -12,4 +12,6 @@ export const ROUTE_NAMES = {
 export const routes: RouteRecordRaw[] = [
 	{ path: '/', name: ROUTE_NAMES.HOME, component: HomeView, meta: { navTitle: 'Home' } },
 	{ path: '/reciter', name: ROUTE_NAMES.RECITER, component: ReciterView, meta: { navTitle: 'Reciter' } },
+	{ path: '/gallery', name: ROUTE_NAMES.GALLERY, component: ReciterView, meta: { navTitle: 'Gallery' } },
+	{ path: '/learning', name: ROUTE_NAMES.LEARNING, component: ReciterView, meta: { navTitle: 'Learning' } },
 ];

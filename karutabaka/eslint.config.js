@@ -23,7 +23,6 @@ export default [
 				},
 			],
 			'vue/multi-word-component-names': 'off',
-			'vue/html-self-closing': 'error',
 		},
 	},
 ];
