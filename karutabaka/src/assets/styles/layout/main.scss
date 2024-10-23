@@ -1,0 +1,19 @@
+@import '../variables';
+
+body {
+	background: $background-gradient;
+	position: relative;
+
+	&::before {
+		content: '';
+		background-size: contain;
+		background-image: url(/assets/images/patterns/bg-top-right-pattern.webp);
+		background-repeat: no-repeat;
+		background-position: top right;
+		position: absolute;
+		top: 68px;
+		right: 0;
+		width: 50%;
+		height: 50%;
+	}
+}

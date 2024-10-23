@@ -24,6 +24,8 @@ const imgSrc = computed(() => `/assets/images/patterns/bara-head${isDark.value ?
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/colors';
+
 .header {
 	background-image: url('/assets/images/patterns/header-bg-pattern.webp');
 	background-repeat: repeat-x;
@@ -38,6 +40,7 @@ const imgSrc = computed(() => `/assets/images/patterns/bara-head${isDark.value ?
 .header .nav {
 	align-items: center;
 	display: flex;
+	font-family: 'Solitreo', sans-serif;
 	gap: 16px;
 	height: 100%;
 	justify-content: center;
@@ -51,12 +54,13 @@ const imgSrc = computed(() => `/assets/images/patterns/bara-head${isDark.value ?
 }
 
 .header .nav .link {
-	color: #161312;
+	color: $text-color-main;
 	text-decoration: none;
 	font-size: 20px;
+	line-height: 24px;
 
 	&:hover {
-		color: white;
+		color: $text-color-hover;
 	}
 }
 </style>

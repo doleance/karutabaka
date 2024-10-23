@@ -1,2 +1,4 @@
-@use './assets/styles/reset';
-@use './assets/styles/elements/links';
+@import './assets/styles/reset';
+@import './assets/styles/fonts';
+@import './assets/styles/layout/main';
+@import './assets/styles/elements/links';

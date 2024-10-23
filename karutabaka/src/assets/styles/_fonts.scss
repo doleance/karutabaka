@@ -1,0 +1,10 @@
+$font-path: '/assets/fonts';
+
+@font-face {
+	font-family: 'Solitreo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('#{$font-path}/Solitreo-Regular.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
