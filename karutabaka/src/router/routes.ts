@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from 'vue-router'
-import HomeView from '../components/HomeView.vue'
-import ReciterView from '../components/ReciterView.vue'
+import HomeView from '../views/HomeView.vue'
+import ReciterView from '../views/ReciterView.vue'
 
 export const ROUTE_NAMES = {
   HOME: 'home',
