@@ -1,4 +1,4 @@
-@import './assets/styles/reset';
-@import './assets/styles/fonts';
-@import './assets/styles/layout/main';
-@import './assets/styles/elements/links';
+@use './assets/styles/reset' as *;
+@use './assets/styles/fonts' as *;
+@use './assets/styles/layout/main' as *;
+@use './assets/styles/elements/links' as *;
