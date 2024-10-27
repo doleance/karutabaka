@@ -20,4 +20,10 @@ useFavicon(favicon);
 .header-margin {
 	margin: 44px 0px;
 }
+
+main {
+	display: flex;
+	justify-content: center;
+	margin: 0 16px;
+}
 </style>

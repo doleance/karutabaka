@@ -1,3 +1,14 @@
 @use './colors' as *;
 
+$md: 640;
+$lg: 1024;
+
+$breakpoints: (
+	'tablet': $md,
+	'desktop': $lg,
+);
+
 $background-gradient: radial-gradient(circle, $background-color-dark 0%, $background-color-light 100%);
+
+$box-shadow-card: 8px 8px 12px rgba(#5d6482, 0.12);
+$box-shadow-card-hover: 8px 8px 12px rgba(#2c2e37, 0.12);

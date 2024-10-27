@@ -34,3 +34,22 @@ const HOME_TILES: HomeTileProps[] = [
 	},
 ];
 </script>
+
+<style lang="scss" scoped>
+.home-tile-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto;
+	gap: 20px;
+
+	@include tablet {
+		gap: 32px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include desktop {
+		gap: 44px;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+</style>

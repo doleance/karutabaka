@@ -3,7 +3,7 @@
 		<div class="tile-container">
 			<h3 :id="tileId" class="tile-title">{{ title }}</h3>
 			<div class="tile-content">
-				<img :src="iconSrc" height="148" width="180" alt="" />
+				<img :src="iconSrc" height="140" width="140" alt="" />
 				<p class="tile-description">{{ description }}</p>
 			</div>
 		</div>
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import type { RouteName } from '../router/routes';
+import type { RouteName } from '@/router/routes';
 
 export interface HomeTileProps {
 	description: string;
@@ -26,19 +26,27 @@ const tileId = `tile-title-${routeName}`;
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/styles/colors' as *;
-
 .navigation-tile {
 	background: $card-background;
 	border-radius: 16px;
 	box-shadow: $box-shadow-card;
 	color: $text-color-main;
 	display: block;
-	height: 428px;
-	margin: 20px;
-	max-width: 248px;
 	padding: 20px;
 	text-decoration: none;
+	width: 100%;
+
+	@include tablet {
+		max-width: 248px;
+	}
+
+	@include desktop {
+		max-width: 248px;
+	}
+
+	&:hover {
+		box-shadow: $box-shadow-card-hover;
+	}
 
 	& .tile-container {
 		border-radius: 4px;
@@ -52,6 +60,7 @@ const tileId = `tile-title-${routeName}`;
 		}
 
 		& .tile-content {
+			align-items: center;
 			border-top: 2px $text-color-main solid;
 			display: flex;
 			flex-direction: column;

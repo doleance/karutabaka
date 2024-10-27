@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+@mixin tablet {
+	@media all and (min-width: #{$md + 'px'}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media all and (min-width: #{$lg + 'px'}) {
+		@content;
+	}
+}

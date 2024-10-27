@@ -26,8 +26,6 @@ const imgSrc = computed(() =>
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/styles/colors' as *;
-
 .page-header {
 	align-items: center;
 	background-image: url('/assets/images/patterns/header-bg-pattern.webp');
