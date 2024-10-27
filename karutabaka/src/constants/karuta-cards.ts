@@ -1,4 +1,4 @@
-import { KarutaCard } from '../interfaces/karuta-card.interface';
+import type { KarutaCard } from '../interfaces/karuta-card.interface';
 
 const KARUTA_CARD_ASSET_PATH = './public/assets/images/karuta-cards';
 

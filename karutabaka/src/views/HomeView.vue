@@ -9,12 +9,6 @@ import HomeTile, { type HomeTileProps } from '../components/HomeTile.vue';
 
 const HOME_TILES: HomeTileProps[] = [
 	{
-		routeName: 'home',
-		title: 'Home',
-		description: 'Main dashboard and latest updates.',
-		iconSrc: '/assets/images/bara-head.webp',
-	},
-	{
 		routeName: 'learning',
 		title: 'Learning',
 		description: 'Access learning materials and tutorials to improve your karuta skills.',
@@ -31,6 +25,12 @@ const HOME_TILES: HomeTileProps[] = [
 		title: 'Reciter',
 		description: 'Utilize the reciter program for gameplay or to improve your listening and reading skills.',
 		iconSrc: '/assets/images/bara-head-momiji.webp',
+	},
+	{
+		routeName: 'rules',
+		title: 'Rules',
+		description: 'Learn the official rules and guidelines of Hyakunin Isshu Kyougi Karuta.',
+		iconSrc: '/assets/images/bara-head.webp',
 	},
 ];
 </script>
