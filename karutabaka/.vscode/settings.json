@@ -2,11 +2,11 @@
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit",
-		"source.fixAll.stylelint": "explicit"
+		"source.fixAll.stylelint": "explicit",
+		"source.removeUnusedImports": "explicit",
 	},
 	"vue.inlayHints.missingProps": true,
 	"vue.inlayHints.inlineHandlerLeading": true,
-	"vue.inlayHints.destructuredProps": true,
 	"stylelint.validate": ["css", "scss", "vue"],
 	"stylelint.config": null,
 	"[scss]": {

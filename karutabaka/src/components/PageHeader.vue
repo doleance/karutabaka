@@ -20,7 +20,9 @@ import { usePreferredDark } from '@vueuse/core';
 const routesToShow = computed(() => routes.filter((route) => route.meta?.navTitle));
 
 const isDark = usePreferredDark();
-const imgSrc = computed(() => `/assets/images/bara-head${isDark.value ? '-momiji' : ''}.webp`);
+const imgSrc = computed(() =>
+	isDark.value ? '/assets/images/bara-head-momiji.webp' : '/assets/images/bara-head.webp',
+);
 </script>
 
 <style lang="scss" scoped>

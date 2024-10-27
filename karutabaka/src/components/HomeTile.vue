@@ -1,14 +1,29 @@
 <template>
-	<RouterLink to="to" class="navigation-tile" aria-labelledby="tile-title">
+	<RouterLink :to="{ name: routeName }" class="navigation-tile" :aria-labelledby="tileId">
 		<div class="tile-container">
-			<h3 id="tile-title" class="tile-title">Tile Title</h3>
+			<h3 :id="tileId" class="tile-title">{{ title }}</h3>
 			<div class="tile-content">
-				<img src="/assets/images/bara-head.webp" height="148" width="180" alt="" />
-				<p class="tile-description">Short description of the destination page.</p>
+				<img :src="iconSrc" height="148" width="180" alt="" />
+				<p class="tile-description">{{ description }}</p>
 			</div>
 		</div>
 	</RouterLink>
 </template>
+
+<script setup lang="ts">
+import type { RouteName } from '../router/routes';
+
+export interface HomeTileProps {
+	description: string;
+	iconSrc: string;
+	title: string;
+	routeName: RouteName;
+}
+
+const { routeName } = defineProps<HomeTileProps>();
+
+const tileId = `tile-title-${routeName}`;
+</script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/colors' as *;
