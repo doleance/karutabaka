@@ -38,9 +38,9 @@ const HOME_TILES: HomeTileProps[] = [
 <style lang="scss" scoped>
 .home-tile-container {
 	display: grid;
+	gap: 20px;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: auto;
-	gap: 20px;
 
 	@include tablet {
 		gap: 32px;

@@ -5,16 +5,16 @@ body {
 	position: relative;
 
 	&::before {
-		content: '';
-		background-size: contain;
 		background-image: url(/assets/images/patterns/bg-top-right-pattern.webp);
-		background-repeat: no-repeat;
 		background-position: top right;
-		position: absolute;
-		top: 68px;
-		right: 0;
-		width: 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
 		height: 50%;
+		position: absolute;
+		right: 0;
+		top: 68px;
+		width: 50%;
 		z-index: -1;
 	}
 }

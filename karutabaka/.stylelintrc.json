@@ -4,10 +4,12 @@
 		"stylelint-config-prettier-scss",
 		"stylelint-config-recommended-vue/scss"
 	],
+	"plugins": ["stylelint-order"],
 	"rules": {
 		"max-nesting-depth": 3,
 		"block-no-empty": true,
 		"declaration-block-no-duplicate-properties": true,
-		"no-duplicate-selectors": true
+		"no-duplicate-selectors": true,
+		"order/properties-alphabetical-order": true
 	}
 }

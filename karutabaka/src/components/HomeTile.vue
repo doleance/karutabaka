@@ -49,8 +49,8 @@ const tileId = `tile-title-${routeName}`;
 	}
 
 	& .tile-container {
-		border-radius: 4px;
 		border: 2px $text-color-main solid;
+		border-radius: 4px;
 		height: 100%;
 		width: 100%;
 
