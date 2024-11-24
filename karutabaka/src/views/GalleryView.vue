@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
 import type { KarutaCard } from '@/interfaces/karuta-card.interface';
-import { KARUTA_CARDS } from '../constants/karuta-cards';
+import { KARUTA_CARDS } from '../constants/karuta-cards.constants';
 import { ref, useTemplateRef } from 'vue';
 
 const karutaCardDialog = useTemplateRef('karutaCardDialog');
