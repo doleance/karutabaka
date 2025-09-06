@@ -1,0 +1,23 @@
+@use '../colors' as *;
+@use '../variables' as *;
+
+@mixin card($size: large) {
+	background: $card-background;
+	border-radius: 16px;
+	box-shadow: $box-shadow-card;
+	color: $text-color-main;
+	display: block;
+
+	text-decoration: none;
+	width: 100%;
+
+	@if $size == large {
+		padding: 20px;
+	} @else {
+		padding: 8px;
+	}
+
+	&:hover {
+		box-shadow: $box-shadow-card-hover;
+	}
+}

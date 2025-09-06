@@ -27,14 +27,7 @@ const tileId = `tile-title-${routeName}`;
 
 <style lang="scss" scoped>
 .navigation-tile {
-	background: $card-background;
-	border-radius: 16px;
-	box-shadow: $box-shadow-card;
-	color: $text-color-main;
-	display: block;
-	padding: 20px;
-	text-decoration: none;
-	width: 100%;
+	@include card;
 
 	@include tablet {
 		max-width: 248px;
@@ -42,10 +35,6 @@ const tileId = `tile-title-${routeName}`;
 
 	@include desktop {
 		max-width: 248px;
-	}
-
-	&:hover {
-		box-shadow: $box-shadow-card-hover;
 	}
 
 	& .tile-container {

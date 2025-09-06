@@ -1,0 +1,22 @@
+{
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"stylelint.validate": ["css", "scss", "vue"],
+	"eslint.codeActionsOnSave.mode": "problems",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.variableTypes.enabled": false,
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+	"typescript.inlayHints.parameterTypes.enabled": true,
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"vue.inlayHints.missingProps": true,
+	"vue.inlayHints.inlineHandlerLeading": true,
+	"files.insertFinalNewline": true,
+	"workbench.editorAssociations": {
+		"*.svg": "default"
+	}
+}

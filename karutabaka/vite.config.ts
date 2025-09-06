@@ -17,6 +17,7 @@ export default defineConfig({
 					@use '@/assets/styles/colors' as *;
 					@use '@/assets/styles/variables' as *;
 					@use '@/assets/styles/mixins/breakpoints' as *;
+					@use '@/assets/styles/mixins/card' as *;
 				`,
 			},
 		},
